@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
 @RequestMapping("hys")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontendtorres.web.app/")
 public class HySSkillsController {
     
     @Autowired

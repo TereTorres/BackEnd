@@ -14,15 +14,15 @@ public class Experiencia {
     private int id_Experiencia;
     
     private String nombreExp;
-    private int anioIngreso;
-    private int anioEgreso;
+    private String anioIngreso;
+    private String anioEgreso;
     private String cargoExp;
     private String descripcionExp; 
 
     public Experiencia() {
     }
 
-    public Experiencia(String nombreExp, int anioIngreso, int anioEgreso, String cargoExp, String descripcionExp) {
+    public Experiencia(String nombreExp, String anioIngreso, String anioEgreso, String cargoExp, String descripcionExp) {
         this.nombreExp = nombreExp;
         this.anioIngreso = anioIngreso;
         this.anioEgreso = anioEgreso;
@@ -46,19 +46,19 @@ public class Experiencia {
         this.nombreExp = nombreExp;
     }
 
-    public int getAnioIngreso() {
+    public String getAnioIngreso() {
         return anioIngreso;
     }
 
-    public void setAnioIngreso(int anioIngreso) {
+    public void setAnioIngreso(String anioIngreso) {
         this.anioIngreso = anioIngreso;
     }
 
-    public int getAnioEgreso() {
+    public String getAnioEgreso() {
         return anioEgreso;
     }
 
-    public void setAnioEgreso(int anioEgreso) {
+    public void setAnioEgreso(String anioEgreso) {
         this.anioEgreso = anioEgreso;
     }
 
@@ -77,5 +77,5 @@ public class Experiencia {
     public void setDescripcionExp(String descripcionExp) {
         this.descripcionExp = descripcionExp;
     }
-        
+   
 }

@@ -8,23 +8,15 @@ public class DtoExperiencia {
     @NotBlank
     private String nombreExp;
     @NotBlank
-    private int anioIngreso;
+    private String anioIngreso;
     @NotBlank
-    private int anioEgreso;
+    private String anioEgreso;
     @NotBlank
     private String cargoExp;
     @NotBlank
     private String descripcionExp; 
 
     public DtoExperiencia() {
-    }
-
-    public DtoExperiencia(String nombreExp, int anioIngreso, int anioEgreso, String cargoExp, String descripcionExp) {
-        this.nombreExp = nombreExp;
-        this.anioIngreso = anioIngreso;
-        this.anioEgreso = anioEgreso;
-        this.cargoExp = cargoExp;
-        this.descripcionExp = descripcionExp;
     }
 
     public String getNombreExp() {
@@ -35,19 +27,19 @@ public class DtoExperiencia {
         this.nombreExp = nombreExp;
     }
 
-    public int getAnioIngreso() {
+    public String getAnioIngreso() {
         return anioIngreso;
     }
 
-    public void setAnioIngreso(int anioIngreso) {
+    public void setAnioIngreso(String anioIngreso) {
         this.anioIngreso = anioIngreso;
     }
 
-    public int getAnioEgreso() {
+    public String getAnioEgreso() {
         return anioEgreso;
     }
 
-    public void setAnioEgreso(int anioEgreso) {
+    public void setAnioEgreso(String anioEgreso) {
         this.anioEgreso = anioEgreso;
     }
 
@@ -66,6 +58,13 @@ public class DtoExperiencia {
     public void setDescripcionExp(String descripcionExp) {
         this.descripcionExp = descripcionExp;
     }
-    
-    
+
+    public DtoExperiencia(String nombreExp, String anioIngreso, String anioEgreso, String cargoExp, String descripcionExp) {
+        this.nombreExp = nombreExp;
+        this.anioIngreso = anioIngreso;
+        this.anioEgreso = anioEgreso;
+        this.cargoExp = cargoExp;
+        this.descripcionExp = descripcionExp;
+    }
+
 }
