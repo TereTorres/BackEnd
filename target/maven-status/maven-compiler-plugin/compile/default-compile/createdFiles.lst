@@ -1,6 +1,5 @@
 com\ProyectoFinal\TereTorres\Controller\PersonaController.class
 com\ProyectoFinal\TereTorres\Service\ImpPersonaService.class
 com\ProyectoFinal\TereTorres\Entity\Persona.class
-com\ProyectoFinal\TereTorres\Interface\IPersonaService.class
 com\ProyectoFinal\TereTorres\Repository\IPersonaRepository.class
 com\ProyectoFinal\TereTorres\TereTorresApplication.class
