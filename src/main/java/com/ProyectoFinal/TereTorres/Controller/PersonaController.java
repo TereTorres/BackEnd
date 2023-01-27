@@ -57,9 +57,9 @@ public class PersonaController {
     @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/detalle/{id}")
     public ResponseEntity<Persona> getById(@PathVariable("id") int id){
-        if(!impPersonaService.existsById(id))
+       /* if(!impPersonaService.existsById(id))
             return new ResponseEntity(new Mensaje("no existe"), HttpStatus.BAD_REQUEST);
-        Persona per = impPersonaService.getOne(id).get();
+        */Persona per = impPersonaService.getOne(id).get();
         return new ResponseEntity(per, HttpStatus.OK);
     }
     
